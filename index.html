@@ -42,6 +42,11 @@
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+					// your allotted time for presentation
+allottedTime: 60 * 60 * 1000, // 3 minutes
+					{ src: 'plugin/elapsed-time-bar/elapsed-time-bar.js'}
+					{ src: 'plugin/menu/menu.js' }
+					{ src: 'plugin/title-footer/title-footer.js', async: true, callback: function() { title_footer.initialize(); } }
 				]
 			});
 		</script>
